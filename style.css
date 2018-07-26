@@ -230,16 +230,18 @@ hr {
 }
 
 #portfolio-section a {
-  display:block;
-  width:100%;
-  height:100%;
-  position:relative;
-  z-index:2;
+  display: inline-block;
+	width: auto;
+	height: 100%;
+	position: relative;
+	z-index: 2;
+	margin: 0 10px 20px 10px;
 }
 
 #portfolio-section a img {
-  width:100%;
+  width:auto;
   display:block;
+  max-width: 340px;
 }
 
 .figcaption p {
@@ -450,7 +452,7 @@ footer .foo {
 		background: white;
 		border: 1px solid #efefef;
 		padding: 15px;
-		z-index: 99;
+		z-index: 99;file:///C:/Users/Studio%20Morion/Desktop/JS/The%20Modernist%20Free%20PSD%20Website%20Template%20from%20OS%20Templates/Main.html#
 		border: 5px solid #e9e9e9;
 		z-index: 99;
 	}
@@ -462,7 +464,7 @@ footer .foo {
 
     .navbar {
     	display: inherit;
-    	z-index: 9999;
+    	z-index: 96;
     	margin-top: 40px;
     }
 

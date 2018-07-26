@@ -18,6 +18,13 @@
 <!-- My own CSS -->
 <link rel="stylesheet" type="text/css" href="./style.css"  />
 
+<script
+			  src="https://code.jquery.com/jquery-3.3.1.min.js"
+			  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+			  crossorigin="anonymous"></script>
+
+<link rel="stylesheet" type="text/css" href="./lightbox-style.css"  />
+
 <!-- Based on PSD template: https://www.os-templates.com/free-psd-templates/the-modernist -->
 
 </head>
@@ -212,54 +219,59 @@
 			<hr>
 			<h2>Latest work</h2>
 			
-			<div class="row margb">
+			<div class="margb">
 				
-				<div class="col-lg-4">
+				<!-- Lightbox --> 
+				 <div id="lbx">
+					  <div class="lbx-content"><img src="" width="90%"></div>
+				</div>
+				<div id="left">←</div>
+				<div id="right">→</div>
+				<!-- End of lightbox -->
+				
+				<div id="box">
 					<a href="#">
-						<img src="https://picsum.photos/380/240/?random-9">
+						<img src="https://picsum.photos/380/240/?random-9" class="lightbox">
 						<div class="figcaption"><p>LOREM IPSUM DOLOR</p></div>
 					</a>
-				</div>
-
-				<div class="col-lg-4">
+				
 					<a href="#">
-						<img src="https://picsum.photos/380/240/?random-9">
+						<img src="https://picsum.photos/380/240/?random-12" class="lightbox">
 						<div class="figcaption"><p>LOREM IPSUM DOLOR</p></div>
 					</a>
-				</div>
+				
 
-				<div class="col-lg-4">
+				
 					<a href="#">
-						<img src="https://picsum.photos/380/240/?random-9">
+						<img src="https://picsum.photos/380/240/?random-14" class="lightbox">
 						<div class="figcaption"><p>LOREM IPSUM DOLOR</p></div>
 					</a>
-				</div>
+				
 
+			
+
+					<a href="#">
+						<img src="https://picsum.photos/380/240/?random-9" class="lightbox">
+						<div class="figcaption"><p>LOREM IPSUM DOLOR</p></div>
+					</a>
+				
+
+				
+					<a href="#">
+						<img src="https://picsum.photos/380/240/?random-9" class="lightbox">
+						<div class="figcaption"><p>LOREM IPSUM DOLOR</p></div>
+					</a>
+				
+
+				
+					<a href="#">
+						<img src="https://picsum.photos/380/240/?random-9" class="lightbox">
+						<div class="figcaption"><p>LOREM IPSUM DOLOR</p></div>
+					</a>
+				
+				</div>
+						
 			</div>
-
-			<div class="row">
-				
-				<div class="col-lg-4">
-					<a href="#">
-						<img src="https://picsum.photos/380/240/?random-9">
-						<div class="figcaption"><p>LOREM IPSUM DOLOR</p></div>
-					</a>
-				</div>
-
-				<div class="col-lg-4">
-					<a href="#">
-						<img src="https://picsum.photos/380/240/?random-9">
-						<div class="figcaption"><p>LOREM IPSUM DOLOR</p></div>
-					</a>
-				</div>
-
-				<div class="col-lg-4">
-					<a href="#">
-						<img src="https://picsum.photos/380/240/?random-9">
-						<div class="figcaption"><p>LOREM IPSUM DOLOR</p></div>
-					</a>
-				</div>
-
 			</div>
 
 		</div>
@@ -340,6 +352,7 @@
 		</div>
 		
 	</div>
+	<script src="./lightbox.js"></script>
 </footer>
 
 </body>
